@@ -315,3 +315,52 @@
     border-radius: 2px;
   }
 }
+
+/* --- Phase F: Quick Answer Layer 1 pattern --- */
+/* whichgiftfor palette (bone + cyan + charcoal) — distinct from sibling */
+/* properties per air-gap rule §1.1.                                     */
+.quick-answer {
+  background: color-mix(in srgb, var(--color-cyan, #0f7882) 8%, var(--color-bone, #f3efe8));
+  border-left: 3px solid var(--color-cyan, #0f7882);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 1.5rem 0 2rem;
+}
+.quick-answer__lede {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+.quick-answer__numbers {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+.quick-answer__numbers li {
+  margin-bottom: 0.25rem;
+}
+.quick-answer__picks {
+  margin: 0 0 1rem;
+  padding-left: 0.25rem;
+  list-style: none;
+  font-variant-numeric: tabular-nums;
+}
+.quick-answer__picks li {
+  margin-bottom: 0.35rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+.quick-answer__picks .rank {
+  font-weight: 600;
+  color: var(--color-charcoal, #2a2a2e);
+  display: inline-block;
+  width: 1.5rem;
+}
+.quick-answer__handoff {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-charcoal, #2a2a2e);
+  opacity: 0.75;
+  font-style: italic;
+}
