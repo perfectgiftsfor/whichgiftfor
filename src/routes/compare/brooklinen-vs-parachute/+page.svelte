@@ -36,6 +36,19 @@
     },
   ];
 
+  const QUICK_ANSWER_FAQS = [
+    {
+      question: "Brooklinen vs Parachute — which sheet set makes the better gift?",
+      answer:
+        "For a recipient whose sleep preferences you don't know intimately, Brooklinen's Classic Percale is the safer, better gift — crisper cloth, wider sleeper appeal, kinder return window. Send Parachute when you already know the recipient prefers sateen, linen, or a more-European register.",
+    },
+    {
+      question: "How much do Brooklinen and Parachute sheet sets cost for gifting?",
+      answer:
+        "Both sit in the $200–$350 queen-set band for their standard lines. Linen from Parachute pushes higher ($350–$500). Below $200 you're likely in a bath-towel or sample product, not the flagship sheet set.",
+    },
+  ];
+
   const schema = graph(
     organizationNode(),
     websiteNode(),
@@ -52,7 +65,7 @@
       dateModified: DATE_MODIFIED,
       articleSection: 'Compare · Bedding',
     }),
-    faqPageNode(FAQS),
+    faqPageNode([...QUICK_ANSWER_FAQS, ...FAQS]),
   );
 </script>
 
@@ -71,6 +84,33 @@
   <h1>Brooklinen vs. Parachute — which sheets to send.</h1>
   <p class="byline">By {SITE.editor.name}, {SITE.editor.role} · Updated {DATE_MODIFIED}</p>
 
+  <!-- Quick Answer (Phase F retrofit) — Layer 1, under 200 words -->
+  <section class="quick-answer" aria-label="Quick answer">
+    <p class="quick-answer__lede">
+      <strong>Brooklinen Classic Percale</strong> is the safer gift for a
+      recipient whose sleep preferences you don't know. Send
+      <strong>Parachute</strong> only when you already know they prefer
+      sateen, linen, or a more-European register to their bed.
+    </p>
+    <ul class="quick-answer__numbers">
+      <li>Queen set (both brands, core line): <strong>$200–$350</strong></li>
+      <li>Parachute Linen (European register): <strong>$350–$500</strong></li>
+      <li>Brooklinen default weave: <strong>percale</strong> (crisp, cool)</li>
+      <li>Parachute default weave: <strong>sateen</strong> (smooth, warmer)</li>
+    </ul>
+    <ol class="quick-answer__picks">
+      <li><span class="rank">1.</span> Unknown recipient → Brooklinen Classic Percale — $200–$300</li>
+      <li><span class="rank">2.</span> Known sateen lover → Parachute Percale or Sateen — $240–$320</li>
+      <li><span class="rank">3.</span> Known linen lover → Parachute Linen — $350–$500</li>
+      <li><span class="rank">4.</span> Re-wrap in plain paper + handwritten card naming the weave rationale</li>
+      <li><span class="rank">5.</span> Always include the gift receipt for returns</li>
+    </ol>
+    <p class="quick-answer__handoff">
+      Below: a full side-by-side comparison, the editor's pick for the
+      default case, and the specific scenarios where Parachute wins.
+    </p>
+  </section>
+
   <p class="bottom-line">
     For the recipient you do not know intimately, <strong>Brooklinen's
     Classic Percale</strong> is the gift to send — crisper cloth, a wider
@@ -88,7 +128,7 @@
     comparison. Full disclosure at <a href="/editorial/">/editorial/</a>.</em>
   </p>
 
-  <h2>Who each brand is for, honestly</h2>
+  <h2>Which recipient wants Brooklinen vs Parachute?</h2>
   <p>
     Brooklinen is the cotton-percale-first brand. The Classic Percale is
     its anchor product: a mid-weight, cool-sleeping, crisp cotton sheet
@@ -165,7 +205,7 @@
     </table>
   </div>
 
-  <h2>The editor's pick</h2>
+  <h2>Which brand wins as the default gift?</h2>
   <p>
     For the gift-giver who is choosing between these two brands without
     specific information about the recipient's sleep preferences — the
@@ -194,7 +234,7 @@
     default to the wider-range cloth, which is percale.
   </p>
 
-  <h2>A note on return policy as a gift variable</h2>
+  <h2>Why does the return policy matter when sending sheets as a gift?</h2>
   <p>
     Return window is not usually on a sheet-comparison table, but it
     belongs on a gift-comparison table. The recipient of a gift sheet set

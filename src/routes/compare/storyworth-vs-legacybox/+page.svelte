@@ -36,6 +36,19 @@
     },
   ];
 
+  const QUICK_ANSWER_FAQS = [
+    {
+      question: "Storyworth vs Legacybox — which memory-preservation gift is right?",
+      answer:
+        "They solve different problems, not the same one. Legacybox is for recipients who have a literal box of VHS tapes, 8mm reels, or loose photographs they want digitized. Storyworth is for recipients who are storytellers — their history lives in their head, and you want a printed book of their own writing at the end of a year.",
+    },
+    {
+      question: "How much do Storyworth vs Legacybox gifts cost?",
+      answer:
+        "Storyworth: $99 for the year-long subscription, includes the printed hardcover book at the end. Legacybox: $120 for a Starter kit (~10 items), $180 Family (~20 items), $320 Closet (~40 items). Legacybox scales with volume — Storyworth is a flat fee regardless of output length.",
+    },
+  ];
+
   const schema = graph(
     organizationNode(),
     websiteNode(),
@@ -52,7 +65,7 @@
       dateModified: DATE_MODIFIED,
       articleSection: 'Compare · Memory preservation',
     }),
-    faqPageNode(FAQS),
+    faqPageNode([...QUICK_ANSWER_FAQS, ...FAQS]),
   );
 </script>
 
@@ -71,6 +84,33 @@
   <h1>Storyworth vs. Legacybox — which memory gift to send.</h1>
   <p class="byline">By {SITE.editor.name}, {SITE.editor.role} · Updated {DATE_MODIFIED}</p>
 
+  <!-- Quick Answer (Phase F retrofit) — Layer 1, under 200 words -->
+  <section class="quick-answer" aria-label="Quick answer">
+    <p class="quick-answer__lede">
+      These aren't substitutes. <strong>Legacybox</strong> digitizes a
+      physical box of tapes / reels / photos the recipient already owns.
+      <strong>Storyworth</strong> prompts a year of weekly writing and
+      prints the result as a hardcover book.
+    </p>
+    <ul class="quick-answer__numbers">
+      <li>Storyworth (year + hardcover book): <strong>$99 flat</strong></li>
+      <li>Legacybox Starter (~10 items): <strong>$120</strong></li>
+      <li>Legacybox Family (~20 items): <strong>$180</strong></li>
+      <li>Legacybox Closet (~40 items): <strong>$320</strong></li>
+    </ul>
+    <ol class="quick-answer__picks">
+      <li><span class="rank">1.</span> Recipient has a shoebox of photos / VHS / 8mm → Legacybox Family — $180</li>
+      <li><span class="rank">2.</span> Recipient is a storyteller with no tapes → Storyworth — $99</li>
+      <li><span class="rank">3.</span> You want both outcomes → Storyworth this year + Legacybox next year</li>
+      <li><span class="rank">4.</span> Grandparent 70+ → lean Storyworth (legacy-capture via prompts)</li>
+      <li><span class="rank">5.</span> Parent with a cluttered closet → lean Legacybox (space + preservation)</li>
+    </ol>
+    <p class="quick-answer__handoff">
+      Below: a full side-by-side, the two-winners-for-two-recipients take,
+      and how to make a Storyworth gift actually reach the printed book.
+    </p>
+  </section>
+
   <p class="bottom-line">
     Send <strong>Legacybox</strong> if the recipient has a literal box of
     VHS tapes, 8mm reels, or loose photographs in a closet and has been
@@ -88,7 +128,7 @@
     comparison. Full disclosure at <a href="/editorial/">/editorial/</a>.</em>
   </p>
 
-  <h2>The two services are solving different problems</h2>
+  <h2>Why aren't Storyworth and Legacybox substitutes?</h2>
   <p>
     Storyworth is a year-long memoir service. You pay once, the
     recipient receives a weekly prompt by email for roughly a year
@@ -170,7 +210,7 @@
     </table>
   </div>
 
-  <h2>The editor's pick — two winners for two recipients</h2>
+  <h2>Which service wins for which recipient?</h2>
   <p>
     This comparison does not resolve into a single winner because the
     two services are answering different questions. If the recipient
@@ -184,7 +224,7 @@
     separate them rather than rank them.
   </p>
 
-  <h2>How to choose when you are unsure</h2>
+  <h2>How should you choose when you're unsure?</h2>
   <p>
     Default to Legacybox when you are unsure. Two reasons. First, its
     completion arc is shorter and more concrete; the recipient is less
@@ -198,7 +238,7 @@
     follow-through is an open question.
   </p>
 
-  <h2>How to make a Storyworth gift actually finish</h2>
+  <h2>How do you make a Storyworth gift actually reach the printed book?</h2>
   <p>
     Two practical moves. First, bundle it with a handwritten letter
     naming particular questions you wish you had asked — not an

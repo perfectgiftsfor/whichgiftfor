@@ -36,6 +36,19 @@
     },
   ];
 
+  const QUICK_ANSWER_FAQS = [
+    {
+      question: "Framebridge vs Artifact Uprising — which is the better gift for a framed photograph?",
+      answer:
+        "Framebridge when the recipient already has the photo and you want it framed — wider frame catalog, friendlier recovery on a missed profile, better gift-facing customer service. Artifact Uprising when the print itself is the gift — heirloom-grade paper treated as a piece of photography rather than a framed memento.",
+    },
+    {
+      question: "How much do Framebridge vs Artifact Uprising gifts run?",
+      answer:
+        "Framebridge framing (8×10 to 11×14, standard profile): $90–$180. Premium profiles + larger sizes: $200–$400. Artifact Uprising prints (non-framed, heirloom-grade): $40–$120. Artifact Uprising framed: $180–$350. Both include gift-ship options.",
+    },
+  ];
+
   const schema = graph(
     organizationNode(),
     websiteNode(),
@@ -52,7 +65,7 @@
       dateModified: DATE_MODIFIED,
       articleSection: 'Compare · Framing',
     }),
-    faqPageNode(FAQS),
+    faqPageNode([...QUICK_ANSWER_FAQS, ...FAQS]),
   );
 </script>
 
@@ -71,6 +84,33 @@
   <h1>Framebridge vs. Artifact Uprising — which framing gift to send.</h1>
   <p class="byline">By {SITE.editor.name}, {SITE.editor.role} · Updated {DATE_MODIFIED}</p>
 
+  <!-- Quick Answer (Phase F retrofit) — Layer 1, under 200 words -->
+  <section class="quick-answer" aria-label="Quick answer">
+    <p class="quick-answer__lede">
+      <strong>Framebridge</strong> when you want to frame a photo the
+      recipient already has or loves. <strong>Artifact Uprising</strong>
+      when the print itself is the gift — treated as photography, not a
+      framed memento.
+    </p>
+    <ul class="quick-answer__numbers">
+      <li>Framebridge framing (standard profile, 8×10–11×14): <strong>$90–$180</strong></li>
+      <li>Framebridge premium profiles + larger sizes: <strong>$200–$400</strong></li>
+      <li>Artifact Uprising prints (heirloom-grade, non-framed): <strong>$40–$120</strong></li>
+      <li>Artifact Uprising framed prints: <strong>$180–$350</strong></li>
+    </ul>
+    <ol class="quick-answer__picks">
+      <li><span class="rank">1.</span> Framing a photo the recipient took → Framebridge standard profile — $90–$180</li>
+      <li><span class="rank">2.</span> Premium framing for a special print → Framebridge premium — $200–$400</li>
+      <li><span class="rank">3.</span> Heirloom print as the gift itself → Artifact Uprising prints — $40–$120</li>
+      <li><span class="rank">4.</span> Heirloom print + frame → Artifact Uprising framed — $180–$350</li>
+      <li><span class="rank">5.</span> Include the original digital file with the gift card (both brands)</li>
+    </ol>
+    <p class="quick-answer__handoff">
+      Below: a side-by-side comparison on recovery policy, which service
+      fits which gift context, and the failure modes to avoid either way.
+    </p>
+  </section>
+
   <p class="bottom-line">
     If the gift is a framed photograph the recipient has already taken
     or already loves, send <strong>Framebridge</strong> — wider frame
@@ -88,7 +128,7 @@
     comparison. Full disclosure at <a href="/editorial/">/editorial/</a>.</em>
   </p>
 
-  <h2>Who each service is for, honestly</h2>
+  <h2>Which recipient wants Framebridge vs Artifact Uprising?</h2>
   <p>
     Framebridge is a framing service. You upload an image, you pick a
     frame profile from a broad catalog of moulding styles, and a trained
@@ -165,7 +205,7 @@
     </table>
   </div>
 
-  <h2>The editor's pick</h2>
+  <h2>Which service wins as the default gift?</h2>
   <p>
     For the most common gift-giving case — a framed photograph of the
     recipient or a moment that matters to them, destined for a shelf or a
@@ -191,7 +231,7 @@
     and a considered gift for that taste.
   </p>
 
-  <h2>Failure modes to avoid either way</h2>
+  <h2>What failure modes should you avoid with either service?</h2>
   <p>
     Two common errors on framing gifts. First, oversizing — a 16x20
     image sounds reasonable on a website and lands as genuinely oversized
