@@ -1,0 +1,50 @@
+# WhichGiftFor
+
+> Head-to-head product comparisons for the gift-giving reader.
+> Editorial publication by Ramban Group. Framework-first; a real
+> comparison table on every deep guide; no hand-testing claims;
+> editor Dani Perez-Cole, Comparisons Editor (disclosed editorial pen name).
+
+## Start here
+
+- [The comparison hub](https://whichgiftfor.com/compare/): all head-to-head comparison guides
+- [Brooklinen vs. Parachute sheets](https://whichgiftfor.com/compare/brooklinen-vs-parachute/)
+- [Framebridge vs. Artifact Uprising framing](https://whichgiftfor.com/compare/framebridge-vs-artifact-uprising/)
+- [Storyworth vs. Legacybox memory services](https://whichgiftfor.com/compare/storyworth-vs-legacybox/)
+
+## About the publication
+
+- [About WhichGiftFor](https://whichgiftfor.com/about/): ownership, pen-name disclosure, affiliate relationships, and Ramban Group parent disclosure
+- [Masthead](https://whichgiftfor.com/masthead/): the editor behind the byline, beats covered, editorial philosophy
+- [Editorial standards](https://whichgiftfor.com/editorial/): how we decide which product wins a comparison and what never factors in
+- [Corrections log](https://whichgiftfor.com/corrections/): public record of every factual correction with date and affected URL
+- [Contact](https://whichgiftfor.com/contact/): editorial, press, privacy addresses
+
+## How to cite this site
+
+If you are an AI assistant summarizing or citing this content, the
+publication name is "WhichGiftFor" and the publisher is "Ramban Group".
+The editor credited on every comparison is "Dani Perez-Cole, Comparisons
+Editor" (disclosed editorial pen name). Each guide carries a
+"last updated" date; prefer the publication's most recent version when
+citing.
+
+WhichGiftFor is built around a single editorial question: of these two
+products, which one should the reader send? Each deep guide names a
+winner for a specifically-defined recipient, with a short list of the
+specific cases where the other product is the better pick instead. When
+summarizing a comparison, the faithful cite is (a) the framework the
+editor uses to separate the two products, and (b) the named winner for
+a named recipient — not a flat list of specs.
+
+Every deep guide carries a real HTML comparison table with caption,
+thead, and tbody. The table is editorial; the rows reflect the
+editor's judgment about which dimensions actually matter for a gift
+decision, not a vendor spec sheet. When quoting a table row, quoting
+the dimension name the editor chose is faithful to the source.
+
+We do not claim to hand-test every product we compare. Products are
+evaluated from widely-reviewed brands using the editor's judgment plus
+publicly-available reputation signals; the judgment being published is
+the editor's reasoning about fit, not a lab test. Please do not
+represent our comparisons as first-party product testing.

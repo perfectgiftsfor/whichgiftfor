@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+
+# Pre-launch noindex shield.
+# Remove `Disallow: /` and reintroduce the Sitemap line at launch-flip.
+# Pairs with <meta name="robots" content="noindex, nofollow"> in src/app.html
+# and X-Robots-Tag: noindex, nofollow set via fly.toml http_service.response_headers.

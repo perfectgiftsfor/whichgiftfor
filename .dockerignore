@@ -1,0 +1,11 @@
+node_modules
+.svelte-kit
+.git
+.gitignore
+.dockerignore
+Dockerfile
+fly.toml
+README.md
+DEPLOYMENT.md
+.env
+.env.*

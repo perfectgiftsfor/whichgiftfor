@@ -1,0 +1,44 @@
+# fly.toml — whichgiftfor.com
+#
+# SvelteKit + adapter-node served on Fly.io.
+# Pre-launch shield: X-Robots-Tag: noindex, nofollow is injected by the
+# http_service.response_headers block below so even if robots.txt is
+# somehow bypassed, the server itself refuses indexing.
+#
+# Region chosen to match the operator's nearest Fly edge; adjust at deploy time.
+
+app = "whichgiftfor"
+primary_region = "iad"
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
+[build]
+  # Dockerfile-based build; Fly.io detects Dockerfile at repo root.
+
+[env]
+  NODE_ENV = "production"
+  PORT = "3000"
+  HOST = "0.0.0.0"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 250
+    soft_limit = 200
+
+  # Pre-launch shield — every response carries a noindex header until we flip at launch.
+  # Pairs with static/robots.txt (Disallow: /) and <meta name="robots" content="noindex"> in app.html.
+  [[http_service.response_headers]]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
