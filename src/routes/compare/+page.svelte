@@ -46,7 +46,7 @@
 
 <main class="editorial">
   <h1>Comparisons hub.</h1>
-  <p class="byline">By {SITE.editor.name}, {SITE.editor.role} · Updated {DATE_MODIFIED}</p>
+  <p class="byline">Last reviewed by <a href="/masthead/#{SITE.editor.slug}">{SITE.editor.name}</a>, {SITE.editor.role} · Updated {DATE_MODIFIED}</p>
 
   <p class="bottom-line">
     Three opening comparisons, each built around a real HTML comparison
