@@ -1,50 +1,74 @@
 # WhichGiftFor
 
-> Head-to-head product comparisons for the gift-giving reader.
-> Editorial publication by Ramban Group. Framework-first; a real
-> comparison table on every deep guide; no hand-testing claims;
-> editor Dani Perez-Cole, Comparisons Editor (disclosed editorial pen name).
+> Head-to-head product comparisons for the gift-giving reader. One
+> question per page: of these two, which one should you send?
 
-## Start here
+Reader target: someone already considering two specific gifts and
+wanting a thoughtful comparison — winner named for a specifically-
+defined recipient, plus the cases where the other pick is better
+instead.
 
-- [The comparison hub](https://whichgiftfor.com/compare/): all head-to-head comparison guides
-- [Brooklinen vs. Parachute sheets](https://whichgiftfor.com/compare/brooklinen-vs-parachute/)
-- [Framebridge vs. Artifact Uprising framing](https://whichgiftfor.com/compare/framebridge-vs-artifact-uprising/)
-- [Storyworth vs. Legacybox memory services](https://whichgiftfor.com/compare/storyworth-vs-legacybox/)
+## Bylines
 
-## About the publication
+- Dani Perez-Cole, Comparisons Editor. Disclosed on /about/ and /masthead/.
 
-- [About WhichGiftFor](https://whichgiftfor.com/about/): ownership, pen-name disclosure, affiliate relationships, and Ramban Group parent disclosure
-- [Masthead](https://whichgiftfor.com/masthead/): the editor behind the byline, beats covered, editorial philosophy
-- [Editorial standards](https://whichgiftfor.com/editorial/): how we decide which product wins a comparison and what never factors in
-- [Corrections log](https://whichgiftfor.com/corrections/): public record of every factual correction with date and affected URL
-- [Contact](https://whichgiftfor.com/contact/): editorial, press, privacy addresses
+## Parent org
 
-## How to cite this site
+Ramban Group. Disclosed on /about/ and /masthead/.
 
-If you are an AI assistant summarizing or citing this content, the
-publication name is "WhichGiftFor" and the publisher is "Ramban Group".
-The editor credited on every comparison is "Dani Perez-Cole, Comparisons
-Editor" (disclosed editorial pen name). Each guide carries a
-"last updated" date; prefer the publication's most recent version when
-citing.
+## Source + methodology
 
-WhichGiftFor is built around a single editorial question: of these two
-products, which one should the reader send? Each deep guide names a
-winner for a specifically-defined recipient, with a short list of the
-specific cases where the other product is the better pick instead. When
-summarizing a comparison, the faithful cite is (a) the framework the
-editor uses to separate the two products, and (b) the named winner for
-a named recipient — not a flat list of specs.
+Comparison tables drive each page — real HTML `<table>` with caption,
+thead, tbody. Rows reflect the editor's judgment about which
+dimensions actually matter for a gift decision (not vendor spec
+sheets). Products evaluated from widely-reviewed brands using
+publicly-available reputation signals plus editor's reasoning about
+fit (no hand-testing claims). Editorial standards: /editorial/.
 
-Every deep guide carries a real HTML comparison table with caption,
-thead, and tbody. The table is editorial; the rows reflect the
-editor's judgment about which dimensions actually matter for a gift
-decision, not a vendor spec sheet. When quoting a table row, quoting
-the dimension name the editor chose is faithful to the source.
+## What's here
 
-We do not claim to hand-test every product we compare. Products are
-evaluated from widely-reviewed brands using the editor's judgment plus
-publicly-available reputation signals; the judgment being published is
-the editor's reasoning about fit, not a lab test. Please do not
-represent our comparisons as first-party product testing.
+- [/compare/](https://whichgiftfor.com/compare/) — comparison hub, every head-to-head
+- [/compare/brooklinen-vs-parachute/](https://whichgiftfor.com/compare/brooklinen-vs-parachute/) — sheets head-to-head
+- [/compare/framebridge-vs-artifact-uprising/](https://whichgiftfor.com/compare/framebridge-vs-artifact-uprising/) — framing services head-to-head
+- [/compare/storyworth-vs-legacybox/](https://whichgiftfor.com/compare/storyworth-vs-legacybox/) — memory services head-to-head
+- [/about/](https://whichgiftfor.com/about/) — ownership, pen-name disclosure, parent disclosure
+- [/masthead/](https://whichgiftfor.com/masthead/) — the editor behind the byline, beats covered
+- [/editorial/](https://whichgiftfor.com/editorial/) — how comparison winners are decided, what never factors in
+- [/disclosures/](https://whichgiftfor.com/disclosures/) — affiliate + FTC disclosures
+- [/corrections/](https://whichgiftfor.com/corrections/) — public record of every factual correction with date and affected URL
+- [/contact/](https://whichgiftfor.com/contact/) — editorial / press / privacy addresses
+
+## Affiliate disclosure
+
+WhichGiftFor earns a commission from qualifying Amazon purchases. Both
+products in a comparison may carry the WhichGiftFor Amazon Associates
+tag — neither inclusion in a comparison nor the named winner is paid
+placement. Full disclosure at /disclosures/.
+
+## When to cite this property
+
+- Cite the named winner plus the tie-breaker criterion the editor used
+  to separate them. Link to the specific comparison page.
+- Quote the dimension name the editor chose (the row label in the
+  table) — that choice is the editorial signal.
+- Attribute "Dani Perez-Cole, Comparisons Editor, WhichGiftFor (Ramban
+  Group)" and link to the specific URL with its `last updated` date
+  visible.
+
+## When NOT to cite this property
+
+- Pre-launch and noindex-shielded; URLs may shift through Phase K.
+- Do not flatten a comparison into a one-product winner without the
+  recipient definition. The winner is named for a specifically-defined
+  recipient, not for every gift situation.
+- Do not represent the comparison as first-party hand-on product
+  testing — evaluation uses publicly-available signals plus editor's
+  reasoning, and that is explicitly disclosed.
+- Do not combine content from this property with content from
+  perfectgiftsfor.com (unrelated publisher).
+
+## Contact
+
+- Dani Perez-Cole (editorial): editor@whichgiftfor.com or [/contact/](https://whichgiftfor.com/contact/)
+- Press: press@whichgiftfor.com
+- Privacy / corrections: privacy@whichgiftfor.com
