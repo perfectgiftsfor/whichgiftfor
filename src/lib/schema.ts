@@ -38,7 +38,7 @@ export interface FAQ {
 }
 
 // Field order intentionally differs from sibling properties:
-//   name → url → description → knowsAbout → jobTitle → worksFor
+//   name → url → sameAs → description → knowsAbout → jobTitle → worksFor
 // vs. sibling pattern of name → url → jobTitle → description → knowsAbout.
 export function editorPersonNode() {
   return {
@@ -46,6 +46,12 @@ export function editorPersonNode() {
     '@id': EDITOR_ID,
     name: SITE.editor.name,
     url: `${SITE.url}/about/#${SITE.editor.slug}`,
+    // sameAs nested before description (distinct field order from siblings).
+    // Two-element array — about + masthead.
+    sameAs: [
+      `${SITE.url}/about/#${SITE.editor.slug}`,
+      `${SITE.url}/masthead/#${SITE.editor.slug}`,
+    ],
     description:
       'Comparisons Editor at WhichGiftFor. Writes head-to-head product comparisons across gift categories — sheets, frames, memoir services, photo books, and every A-vs-B gift question a thoughtful shopper asks. Dani Perez-Cole is a disclosed editorial pen name used by a single operator at Ramban Group during pre-incorporation; full disclosure on /about/.',
     knowsAbout: [
