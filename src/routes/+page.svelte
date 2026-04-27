@@ -15,7 +15,8 @@
 
   const TITLE = 'Two products. One winner. The reasoning.';
   const DESCRIPTION =
-    "WhichGiftFor writes head-to-head product comparisons for gift-givers. Each deep guide answers one question — of these two, which one should you send — with a real comparison table, a named winner for a specifically-defined recipient, and the cases where the other product is the right pick instead.";
+    "WhichGiftFor writes head-to-head product comparisons for gift-givers. Each deep guide names a winner for a specifically-defined recipient, plus the cases where the other pick wins.";
+  const OG_IMAGE = `${SITE.url}/og-default.png`;
 
   const FAQS = [
     {
@@ -54,10 +55,18 @@
 <svelte:head>
   <title>{TITLE} — {SITE.name}</title>
   <meta name="description" content={DESCRIPTION} />
+  <meta property="og:site_name" content={SITE.name} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={`${TITLE} — ${SITE.name}`} />
   <meta property="og:description" content={DESCRIPTION} />
   <meta property="og:url" content="https://whichgiftfor.com/" />
+  <meta property="og:image" content={OG_IMAGE} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${TITLE} — ${SITE.name}`} />
+  <meta name="twitter:description" content={DESCRIPTION} />
+  <meta name="twitter:image" content={OG_IMAGE} />
   <link rel="canonical" href={`${SITE.url}/`} />
   {@html `<script type="application/ld+json">${jsonLd(schema)}</script>`}
 </svelte:head>
