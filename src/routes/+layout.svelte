@@ -34,6 +34,12 @@
       claim to hand-test every product we compare. Full standards at
       <a href="/editorial/">/editorial/</a>.
     </p>
+    <p class="footer-ftc">
+      As an Amazon Associate, I earn from qualifying purchases. Editorial
+      selections are independent of affiliate commission — see our
+      <a href="/editorial/">editorial standards</a> and
+      <a href="/disclosures/">affiliate disclosure</a>.
+    </p>
     <nav class="footer-legal" aria-label="Legal">
       <a href="/about/">About</a>
       <a href="/editorial/">Editorial</a>
